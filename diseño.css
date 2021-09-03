@@ -1,0 +1,65 @@
+*{
+    font-family: roboto, san-serif;
+}
+:root{
+    --color1: #41679f;
+    --color2: #22516f;
+    --color3: #5BB5D9;
+    --color4: #BABEBF;
+    --color5: #F2F2F2;
+    --color6: #00ABCC;
+}
+#logo{
+    margin: 1rem;
+}
+#articule{
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+#imagenEmpresa img{
+    position: absolute;
+    left: 1000px;
+    top: -80px;
+    z-index: 2;
+    
+}
+#texto{
+    background-color: var(--color6);
+    box-shadow:10px 10px 5px #aaaaaa;
+}
+#section{
+    background-image: linear-gradient(to bottom right, #5BB5D9, #41679f, #BABEBF)
+}
+#articule h1{
+    font-size: 2rem;
+}
+#articule p{
+    padding-bottom: 1.5rem;
+}
+#nombre{
+    width: 15rem;
+    margin-bottom: 1rem;
+}
+#comenzar{
+    display: flex;
+    justify-content: flex-end;
+}
+#boton{
+    background-color: #F26C5C;
+    color: white;
+}
+#foot p{ 
+    text-align: center;
+    animation: movimiento 30s linear infinite;
+}
+@keyframes movimiento{
+    0%{
+        transform: translateX(0px)
+    }
+    100%{
+        transform: translateX(2000px)
+    }
+    
+}
+
