@@ -50,8 +50,10 @@
     background-color: #F26C5C;
     color: white;
 }
+#boton:hover{
+    border-radius: 80%;
+}
 #foot p{ 
-    text-align: center;
     animation: movimiento 30s linear infinite;
 }
 @keyframes movimiento{
