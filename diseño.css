@@ -30,11 +30,11 @@
     top: -80px;
     z-index: 2;
 }
-#texto, #pregunta1{
+#texto, #pregunta1, #pregunta2{
     background-color: var(--color6);
     box-shadow:10px 10px 5px #aaaaaa;
 }
-#pregunta1{
+#pregunta1, #pregunta2{
     padding: 2rem 6rem;
 }
 #section{
@@ -57,14 +57,14 @@
     display: flex;
     justify-content: flex-end;
 }
-#boton, #comprobar1{
+#boton, #comprobar1, #comprobar2{
     background-color: #F26C5C;
     color: white;
 }
 #boton:hover{
     border-radius: 80%;
 }
-#foot p{ 
+#foot p, #foot2 p{ 
     animation: movimiento 30s linear infinite;
 }
 @keyframes movimiento{
@@ -75,7 +75,7 @@
         transform: translateX(2000px)
     }
 }
-#preguntas label{
+#preguntas label, #preguntas2 label{
     display: block;
 }
 
