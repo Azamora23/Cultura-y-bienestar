@@ -12,6 +12,12 @@
 }
 #logo{
     margin: 1rem;
+    animation: rotar 8s linear infinite;
+}
+@keyframes rotar {
+    0%{
+        transform: rotate3d(2, 1, 0, 360deg)
+    }
 }
 #articule{
     margin: auto;
@@ -23,17 +29,22 @@
     left: 1000px;
     top: -80px;
     z-index: 2;
-    
 }
-#texto{
+#texto, #pregunta1{
     background-color: var(--color6);
     box-shadow:10px 10px 5px #aaaaaa;
+}
+#pregunta1{
+    padding: 2rem 6rem;
 }
 #section{
     background-image: linear-gradient(to bottom right, #5BB5D9, #41679f, #BABEBF)
 }
 #articule h1{
     font-size: 2rem;
+}
+#articule h2{
+    font-size: 1.5rem;
 }
 #articule p{
     padding-bottom: 1.5rem;
@@ -46,7 +57,7 @@
     display: flex;
     justify-content: flex-end;
 }
-#boton{
+#boton, #comprobar1{
     background-color: #F26C5C;
     color: white;
 }
@@ -63,6 +74,8 @@
     100%{
         transform: translateX(2000px)
     }
-    
+}
+#preguntas label{
+    display: block;
 }
 
