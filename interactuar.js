@@ -76,4 +76,22 @@ for (var i = 0; i < radio.length; i++){
     }
     }
 }
+//alerta finalizar
+function gracias(){
+var nombre = localStorage["nombre"]    
+    Swal.fire({
+        imageUrl: 'Imagen1.png',
+        imageWidth: 200,
+        title: nombre,
+        text: 'Muchas gracias por tu participación',
+        showConfirmButton: false,
+        timer: 1500,
+        showClass: {
+          popup: 'animate__animated animate__fadeInDown'
+        },
+        hideClass: {
+          popup: 'animate__animated animate__fadeOutUp'
+        }
+    })
+}
 
