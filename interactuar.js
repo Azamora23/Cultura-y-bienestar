@@ -85,7 +85,6 @@ var nombre = localStorage["nombre"]
         title: nombre,
         text: 'Muchas gracias por tu participación',
         showConfirmButton: false,
-        timer: 1500,
         showClass: {
           popup: 'animate__animated animate__fadeInDown'
         },
@@ -93,5 +92,8 @@ var nombre = localStorage["nombre"]
           popup: 'animate__animated animate__fadeOutUp'
         }
     })
+var container = document.getElementById("containerPregunta6")
+container.style.display = "none"    
 }
+
 
