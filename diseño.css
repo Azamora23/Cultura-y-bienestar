@@ -63,6 +63,9 @@
     background-color: #F26C5C;
     color: white;
 }
+#acceso{
+    display: none;
+}
 #boton:hover{
     border-radius: 80%;
 }

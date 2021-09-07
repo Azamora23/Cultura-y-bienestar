@@ -34,6 +34,7 @@ function pregunta6(){
 function respuesta1(){
 var radio = document.getElementsByName("answer")
 var nombre = localStorage["nombre"]
+var siguiente = document.getElementById("acceso")
 
 for (var i = 0; i < radio.length; i++){
     if(radio[0].checked == true){
@@ -44,8 +45,8 @@ for (var i = 0; i < radio.length; i++){
             text: 'Tu respuesta es correcta',
             showConfirmButton: false,
             timer: 1500
-            
           })
+        siguiente.style.display = "block"  
         }
         else if(radio[1].checked == true) {
             Swal.fire({
@@ -82,6 +83,7 @@ for (var i = 0; i < radio.length; i++){
 function respuesta2(){
 var radio = document.getElementsByName("answer")
 var nombre = localStorage["nombre"]
+var siguiente = document.getElementById("acceso")
     
 for (var i = 0; i < radio.length; i++){
     if(radio[2].checked == true){
@@ -93,6 +95,7 @@ for (var i = 0; i < radio.length; i++){
             showConfirmButton: false,
             timer: 1500
             })
+        siguiente.style.display = "block"      
         }
         else if(radio[1].checked == true) {
             Swal.fire({
@@ -133,7 +136,7 @@ var nombre = localStorage["nombre"]
         imageUrl: 'Imagen1.png',
         imageWidth: 200,
         title: nombre,
-        text: 'Muchas gracias por tu participación',
+        text: '¡Muchas gracias por tu participación!',
         showConfirmButton: false,
         showClass: {
           popup: 'animate__animated animate__fadeInDown'
