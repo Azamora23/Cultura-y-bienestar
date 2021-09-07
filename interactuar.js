@@ -1,17 +1,8 @@
-var nombre = document.getElementById("nombre").value
-localStorage.setItem("nombre", nombre);
-
-
-
-
 //boton siguiente
 function pregunta1(){
     var nombre = document.getElementById("nombre").value
     localStorage.setItem("nombre", nombre);
     window.location.assign("index3.html")
-
-    
-        
 }
 function pregunta2(){
     window.location.assign("index4.html")
@@ -30,7 +21,6 @@ function pregunta6(){
 }
 
 //alertas boton comprobar respuesta
-
 function respuesta1(){
 var radio = document.getElementsByName("answer")
 var nombre = localStorage["nombre"]
@@ -58,14 +48,32 @@ for (var i = 0; i < radio.length; i++){
               })
     }
     }
-
 }
-/*function respuesta1(){
-    Swal.fire({
-        position: 'top-end',
-        icon: 'success',
-        title: 'Your work has been saved',
-        showConfirmButton: false,
-        timer: 1500
-      })
-}*/
+function respuesta2(){
+var radio = document.getElementsByName("answer")
+var nombre = localStorage["nombre"]
+    
+for (var i = 0; i < radio.length; i++){
+    if(radio[2].checked == true){
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: nombre, 
+            text: 'Tu respuesta es correcta',
+            showConfirmButton: false,
+            timer: 1500
+            })
+        }
+        else {
+            Swal.fire({
+                position: 'top-end',
+                icon: 'error',
+                title: nombre,
+                text: 'Tu respuesta es incorrecta, vuelve a intentarlo',
+                showConfirmButton: false,
+                timer: 1500
+                })
+    }
+    }
+}
+
