@@ -2,7 +2,17 @@
 function pregunta1(){
     var nombre = document.getElementById("nombre").value
     localStorage.setItem("nombre", nombre);
-    window.location.assign("index3.html")
+    if (nombre.length >= 3){
+        window.location.assign("index3.html")
+    }
+    else{
+        Swal.fire({
+            position: 'top-end',
+            icon: 'info',
+            title: 'Ups debes ingresar tu nombre',
+            confirmButtonColor: '#F26C5C',
+        }) 
+    }
 }
 function pregunta2(){
     window.location.assign("index4.html")
@@ -94,7 +104,7 @@ for (var i = 0; i < radio.length; i++){
                 timer: 1500
               })
         }
-        else if(radio[2].checked == true) {
+        else if(radio[0].checked == true) {
             Swal.fire({
                 position: 'top-end',
                 icon: 'error',
