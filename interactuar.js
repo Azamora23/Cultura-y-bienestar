@@ -1,4 +1,4 @@
-//boton siguiente
+//boton siguiente y obtener value
 function pregunta1(){
     var nombre = document.getElementById("nombre").value
     localStorage.setItem("nombre", nombre);
@@ -37,7 +37,7 @@ for (var i = 0; i < radio.length; i++){
             
           })
         }
-        else {
+        else if(radio[1].checked == true) {
             Swal.fire({
                 position: 'top-end',
                 icon: 'error',
@@ -46,7 +46,27 @@ for (var i = 0; i < radio.length; i++){
                 showConfirmButton: false,
                 timer: 1500
               })
-    }
+        }
+        else if(radio[2].checked == true) {
+            Swal.fire({
+                position: 'top-end',
+                icon: 'error',
+                title: nombre,
+                text: 'Tu respuesta es incorrecta, vuelve a intentarlo',
+                showConfirmButton: false,
+                timer: 1500
+              })
+        }
+        else{
+            Swal.fire({
+                position: 'top-end',
+                icon: 'info',
+                title: nombre,
+                text: 'Debes escoger una opción',
+                showConfirmButton: false,
+                timer: 1500
+              })
+        }
     }
 }
 function respuesta2(){
@@ -64,7 +84,7 @@ for (var i = 0; i < radio.length; i++){
             timer: 1500
             })
         }
-        else {
+        else if(radio[1].checked == true) {
             Swal.fire({
                 position: 'top-end',
                 icon: 'error',
@@ -72,8 +92,28 @@ for (var i = 0; i < radio.length; i++){
                 text: 'Tu respuesta es incorrecta, vuelve a intentarlo',
                 showConfirmButton: false,
                 timer: 1500
-                })
-    }
+              })
+        }
+        else if(radio[2].checked == true) {
+            Swal.fire({
+                position: 'top-end',
+                icon: 'error',
+                title: nombre,
+                text: 'Tu respuesta es incorrecta, vuelve a intentarlo',
+                showConfirmButton: false,
+                timer: 1500
+              })
+        }
+        else{
+            Swal.fire({
+                position: 'top-end',
+                icon: 'info',
+                title: nombre,
+                text: 'Debes escoger una opción',
+                showConfirmButton: false,
+                timer: 1500
+              })
+        }
     }
 }
 //alerta finalizar
