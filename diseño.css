@@ -82,11 +82,6 @@
 #preguntas label, #preguntas2 label, #preguntas3 label, #preguntas4 label, #preguntas5 label, #preguntas6 label{
     display: block;
 }
-@media only screen and (max-width: 960px) {
- #imagenEmpresa{
-     display: none;
- }
-}
 @media only screen and (max-width: 768px ){
 #pregunta2, #pregunta1, #pregunta3, #pregunta4, #pregunta5, #pregunta6{
     padding: 1rem;
@@ -101,7 +96,7 @@
 #logo{
     padding: 0.5rem;
     margin: 0rem;
-}    
+    }    
 }
 
     
