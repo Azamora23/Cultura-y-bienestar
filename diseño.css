@@ -11,7 +11,8 @@
     --color7: #F26C5C;
 }
 #logo{
-    margin: 1rem;
+    margin: 0rem;
+    padding: 1rem;
     animation: rotar 8s linear infinite;
     -webkit-animation: rotar 8s linear infinite;
     -moz-animation: rotar 8s linear infinite;
@@ -24,12 +25,6 @@
 }
 #articule{
     margin: auto;
-}
-#imagenEmpresa img{
-    position: absolute;
-    left: 1000px;
-    top: -80px;
-    z-index: 2;
 }
 #texto{
     background-color: var(--color6);
