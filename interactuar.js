@@ -146,7 +146,9 @@ var nombre = localStorage["nombre"]
         }
     })
 var container = document.getElementById("containerPregunta6")
-container.style.display = "none"    
+container.style.display = "none" 
+var finalizar = document.getElementById("acceso")
+finalizar.style.display = "block"   
 }
 
 
