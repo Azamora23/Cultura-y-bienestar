@@ -11,7 +11,8 @@
     --color7: #F26C5C;
 }
 #logo{
-    margin: 1rem;
+    margin: 0rem;
+    padding: 1rem;
     animation: rotar 8s linear infinite;
     -webkit-animation: rotar 8s linear infinite;
     -moz-animation: rotar 8s linear infinite;
@@ -24,15 +25,7 @@
 }
 #articule{
     margin: auto;
-    position: relative;
-    z-index: 1;
 }
-/*#imagenEmpresa img{
-    position: absolute;
-    left: 1000px;
-    top: -80px;
-    z-index: 2;
-}*/
 #texto{
     background-color: var(--color6);
     box-shadow:10px 10px 5px #aaaaaa;
@@ -80,20 +73,32 @@
 }
 @keyframes movimiento{
     0%{
-        transform: translateX(0px)
+        transform: translateX(0%)
     }
     100%{
-        transform: translateX(2000px)
+        transform: translateX(100%)
     }
 }
 #preguntas label, #preguntas2 label, #preguntas3 label, #preguntas4 label, #preguntas5 label, #preguntas6 label{
     display: block;
 }
-/*@media only screen and (max-width: 800px ){
-#contenedor{
-    display: flex;
+@media only screen and (max-width: 768px ){
+#pregunta2, #pregunta1, #pregunta3, #pregunta4, #pregunta5, #pregunta6{
+    padding: 1rem;
+    }
+#foot p, #foot2 p, #foot3 p, #foot4 p, #foot5 p, #foot6 p{
+    animation: none;
+    -moz-animation: none;
+    -o-animation: none;
+    -webkit-animation: none;
+    padding: 0rem 0.5rem;
+    }       
+#logo{
+    padding: 0.5rem;
+    margin: 0rem;
+    }    
 }
-}*/
+
     
 
 
